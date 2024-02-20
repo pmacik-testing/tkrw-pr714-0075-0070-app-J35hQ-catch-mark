@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-xmkl
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0070-tenant/tkrw-pr714-0075-0070-app/devfile-sample-xmkl@sha256:a7e341283e0afb1c0153db63aa100cbed48cd1ac0e5fc2e703ddbc7ca845c779
+        name: my-nodejs
+        resources: {}
+status: {}
